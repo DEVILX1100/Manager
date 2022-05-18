@@ -5,7 +5,7 @@ module.exports = {
     Bot: {
         ClientID: "880372206163623966",
         ClientSecret: "XXXXXXXXXXXXXXXXXXXX",
-        ClientToken: "Xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx", // Bot Token here
+        ClientToken: process.env.TOKEN, // Bot Token here
         Color: "BLURPLE", 
         BotPrefix: "!" // Prefix
     },
