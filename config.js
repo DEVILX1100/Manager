@@ -11,6 +11,6 @@ module.exports = {
     },
 
 
-    Mongoose: "mongodb+srv://Radio-Music:radiomusic123@cluster0.gv1x8.mongodb.net/Radio-Music", // MongoDb Url
+    Mongoose: "mongodb+srv://XetaMusic:xeta123@cluster0.3zrgz.mongodb.net/XetaDataBase", // MongoDb Url
 
 }
