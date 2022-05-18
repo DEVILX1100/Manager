@@ -42,12 +42,10 @@ module.exports = {
         if (message.guild.region === "us-central") message.guild.region = "US Central";
         if (message.guild.region === "us-south") message.guild.region = "US South";
 
-        const thisguild  = message.guild;   
-        const owner = thisguild.owner.user.username;
 
         let embed = new MessageEmbed()
             .setTitle(`About ${message.guild.name}`)
-            .addField(`<a:xeta_arrow:976492129750777936> | Owner`, `${owner} ${message.guild.owner}`)
+            .addField(`<a:xeta_arrow:976492129750777936> | Owner`, `${message.guild.owner}`)
             .addField(`<a:xeta_arrow:976492129750777936> | Server ID`, `${message.guild.id}`)
             .addField(`<a:xeta_arrow:976492129750777936> | Region`, `${message.guild.region}`)
             .addField(`<a:xeta_arrow:976492129750777936> | Total Members`, `${message.guild.memberCount}`)
