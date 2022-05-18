@@ -44,7 +44,7 @@ module.exports = {
 
         let embed = new MessageEmbed()
             .setTitle(`About ${message.guild.name}`)
-            .addField(`<a:xeta_arrow:976492129750777936> | Owner`, `${message.guild.owner.username}`)
+            .addField(`<a:xeta_arrow:976492129750777936> | Owner`, `${message.guild.owner.user.username}`)
             .addField(`<a:xeta_arrow:976492129750777936> | Server ID`, `${message.guild.id}`)
             .addField(`<a:xeta_arrow:976492129750777936> | Region`, `${message.guild.region}`)
             .addField(`<a:xeta_arrow:976492129750777936> | Total Members`, `${message.guild.memberCount}`)
