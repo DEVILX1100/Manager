@@ -6,7 +6,7 @@ module.exports = {
         ClientID: "964027855187087380",
         ClientSecret: "_xpdGUNQv0cCvM0PW9WRd2KK6PCY5ET9",
         ClientToken: process.env.TOKEN, // Bot Token here
-        Color: "BLURPLE", 
+        Color: "#5865F2", //BLURPLE
         BotPrefix: "!" // Prefix
     },
 
