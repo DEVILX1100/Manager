@@ -36,4 +36,9 @@ module.exports = client;
  require("./Structures/Command")(client)
  require("./Structures/slashCommand")(client)
 
+
+client.on('guildCreate', guild => {
+  guild.systemChannel.send(`Thanks for inviting me.`)
+});
+
 client.start(client.config.Bot.ClientToken);
