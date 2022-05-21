@@ -37,8 +37,9 @@ module.exports = client;
  require("./Structures/slashCommand")(client)
 
 
-client.on('guildCreate', guild => {
-  guild.systemChannel.send(`Thanks for inviting me.`)
-});
+client.on('guildCreate', (g) => {
+    const channel = g.channels.cache.find(channel => channel.type === 'GUILD_TEXT' && channel.permissionsFor(g.me).has('SEND_MESSAGES'))
+    channel.send("Thank you for inviting me!")
+})
 
 client.start(client.config.Bot.ClientToken);
